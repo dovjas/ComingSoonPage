@@ -26,11 +26,13 @@ body{
     gap: 5rem;
 }
 .top-block .title{
-    font-size: 3rem;
+    font-size: 4rem;
+    color:#0ff0fc;
     padding-bottom: 10px;
-}
+} 
 .top-block .sub-title{
     letter-spacing: 5px;
+    color: white;
 }
 .middle-block{
     display: flex;
@@ -40,6 +42,7 @@ body{
 }
 .middle-block h2{
     font-size: 4rem;
+    color: white;
 }
 .middle-block h2 span{
     font-size: 1.5rem;
@@ -50,6 +53,9 @@ body{
     font-size: 1.2rem;
     font-weight: 600;
 }
+.footer-title{
+    color:white
+}
 .footer-block .social-icons{
     display: flex;
     align-items: center;
@@ -58,12 +64,19 @@ body{
     margin-top: 10px;
 }
 .footer-block .social-icons i{
-  color:black;
+  color: #0ff0fc;
+
+}
+.bg-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 @media screen and (max-width: 685px){
     .container .title{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
     .container .sub-title{
         font-size: 1rem;
@@ -73,7 +86,7 @@ body{
        gap: 1rem; 
     }
     .middle-block h2{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .middle-block h2 span{
         font-size: 1rem;
