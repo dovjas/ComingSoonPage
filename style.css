@@ -60,3 +60,22 @@ body{
 .footer-block .social-icons i{
   color:black;
 }
+
+@media screen and (max-width: 685px){
+    .container .title{
+        font-size: 1.5rem;
+    }
+    .container .sub-title{
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+    .middle-block{
+       gap: 1rem; 
+    }
+    .middle-block h2{
+        font-size: 2rem;
+    }
+    .middle-block h2 span{
+        font-size: 1rem;
+    }
+}

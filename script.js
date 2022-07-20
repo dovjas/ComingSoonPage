@@ -4,7 +4,9 @@ const startDate = new Date('December 31,2022 20:00:00').getTime();
 console.log(startDate)
 const timer = setInterval(timeCounter,1000)
 console.log(timer)
+
 function timeCounter(){
+
     let now = new Date().getTime();
     let countDown = startDate - now;
 
@@ -13,14 +15,22 @@ function timeCounter(){
     console.log(day)
  
     // Hour calculation
-    let hour = Math.floor((countDown % (1000 * 60 * 60 * 24))/(1000 * 60 * 60 * 24));
+    let hour = Math.floor((countDown % (1000 * 60 * 60 * 24))/(1000 * 60 * 60));
     console.log(hour)
 
     // Minutes calculation
-    let min = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60 * 60));
+    let min = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
     console.log(min)
 
     // Seconds calculation
     let sec = Math.floor((countDown % (1000*60)) / (1000))
     console.log(sec)
+
+
+let time = `
+    <h2>${day}<span>Days</span></h2>
+    <h2>${hour} <span>Hours</span></h2>
+    <h2>${min} <span>Mins</span></h2>
+    <h2>${sec} <span>Secs</span></h2>`
+timerBlock.innerHTML = time
 }
