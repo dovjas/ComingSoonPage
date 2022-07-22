@@ -73,6 +73,27 @@ body{
     bottom: 0;
     z-index: -1;
 }
+.email-block input{
+    width: 400px;
+    margin-top: 40px;
+    padding: 4px 0;
+    border: 1px solid #0ff0fc;
+    border-radius: 5px;
+}
+.email-block button{
+    background-color:#0ff0fc;
+    padding: 4px 5px;
+    border: none;
+    border-radius:5px;
+    color: white;
+}
+.email-block button:hover{
+    background-color: #fff;
+    padding: 4px 5px;
+    border: none;
+    border-radius:5px;
+    color: black;
+}
 
 @media screen and (max-width: 685px){
     .container .title{
