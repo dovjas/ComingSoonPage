@@ -76,25 +76,41 @@ body{
 .email-block input{
     width: 400px;
     margin-top: 40px;
-    padding: 4px 0;
+    padding: 8px 0;
     border: 1px solid #0ff0fc;
     border-radius: 5px;
 }
 .email-block button{
-    background-color:#0ff0fc;
-    padding: 4px 5px;
-    border: none;
-    border-radius:5px;
-    color: white;
-}
-.email-block button:hover{
-    background-color: #fff;
-    padding: 4px 5px;
-    border: none;
-    border-radius:5px;
-    color: black;
-}
-
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffff;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid #ffff;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  .email-block button:after {
+    content: "";
+    background-color: #0ff0fc;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  .email-block button:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
 @media screen and (max-width: 685px){
     .container .title{
         font-size: 2.5rem;
@@ -112,4 +128,8 @@ body{
     .middle-block h2 span{
         font-size: 1rem;
     }
+    .email-block button {
+        margin-top: 5px;
+        padding: 13px 50px 13px;
+      }
 }
