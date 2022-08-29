@@ -1,1 +1,19 @@
-
+{
+  "name": "coming-soon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dovjas/CommingSoonPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dovjas/CommingSoonPage/issues"
+  },
+  "homepage": "https://github.com/dovjas/CommingSoonPage#readme"
+}
