@@ -4,7 +4,7 @@
   "description": "",
   "engines": {
     "node": "v16.15.0"
-    },
+  },
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/dovjas/CommingSoonPage/issues"
   },
-  "homepage": "https://github.com/dovjas/CommingSoonPage#readme"
+  "homepage": "https://github.com/dovjas/CommingSoonPage#readme",
+  "dependencies": {
+    "serve": "^14.0.1"
+  }
 }
